@@ -1,4 +1,4 @@
-// comment 1 : create class and objects 
+
 export class Recipe {
   public name: string;
   public description: string;
