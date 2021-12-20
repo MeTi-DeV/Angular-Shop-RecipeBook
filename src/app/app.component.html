@@ -1,9 +1,12 @@
-<app-header></app-header>
+<!-- here use header property (featureSelected) and call onNavigate to assign featureSelected value to this xomponent -->
+<app-header (featureSelected)="onNavigate($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes></app-recipes>
-      <app-shopping-list></app-shopping-list>
+      <app-recipes *ngIf="featureloaded == 'recipe'"></app-recipes>
+      <app-shopping-list
+        *ngIf="featureloaded == 'shopping-list'"
+      ></app-shopping-list>
     </div>
   </div>
 </div>
