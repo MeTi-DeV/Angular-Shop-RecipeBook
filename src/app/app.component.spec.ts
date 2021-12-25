@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ShopList-RecipeBook'`, () => {
+  it(`should have as title 'RecipeShoppingList'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ShopList-RecipeBook');
+    expect(app.title).toEqual('RecipeShoppingList');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ShopList-RecipeBook app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('RecipeShoppingList app is running!');
   });
 });
